@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>McDonalds</title>
+    <link rel="icon" type="image/x-icon" href="/resources/McDeliveryLogo.png">
+    <style>
+        /* Hide the scrollbar but keep the scrollable nature */
+        .custom-scrollbar::-webkit-scrollbar {
+          display: none;
+        }
+        .custom-scrollbar {
+          scrollbar-width: none; /* Firefox */
+          -ms-overflow-style: none; /* IE and Edge */
+        }
+      </style>
+</head>
+<body class=" bg-red-50">
+    <div class="hidden sm:hidden md:hidden lg:block">      
+        <div class="flex-col">
+            <div class="flex font-sans fixed p-3 z-10 bg-white shadow-md w-full">
+                <div class="logo-container mr-4 lg:ml-12 xl:ml-20">
+                    <img src="/resources/McDeliveryLogo.png" alt="Logo" class="logo w-16 h-16">
+                </div>
+                <div class="bg-red-500  rounded-lg p-3 w-1/5 h-4/5 lg:flex xl:flex mr-4  mb-4 ml-4">
+                    <img src="/resources/bm-delivery-active.svg" alt="delivery" class="w-9 h-9">
+                    <p class="text-sm font-medium text-white sm:text-slate-500 dark:sm:text-slate-400 mt-2 ml-2">McDelivery</p>
+                    <img src="/resources/arrow-down-white.svg" alt="dropdown" class="w-4 h-4 mt-3 ml-2">
+                </div>
+                <div class="border border-black-300 w-1/4 rounded-lg mb-4 ">
+                    <div class="flex m-4">
+                        <div>
+                            <div class="flex">
+                                <img src="/resources/goldenArches.png" alt="msymbol" class="w-3 h-3 mt-2 ml-3">
+                                <h1 class="font-bold ml-2">Bandra</h1>
+                                <p>,Bandra(W) Linkin...</p>
+                                <img src="/resources/arrow-down.svg" alt="dropdown" class="w-4 h-4 mt-2 ml-4">
+                            </div> 
+                            <p class="text-sm sm:text-base ml-2">Please enter your location so we can...</p>
+                        </div>
+                        <div class="flex-col mr-3">
+                            <img src="/resources/time-circle.svg" alt="time" class="w-4 h-4 mt-2 xl:ml-6 lg:ml-6 ">
+                            <p class="text-sm sm:text-base ml-4">Now</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:12 xl:ml-32 border-l border-black h-6 mt-4 mb-3 flex">
+                    <h1 class="font-bold ml-14">Offers</h1>
+                    <h1 class="font-bold ml-14">Restaurants Nearby</h1>
+                </div>
+                <div class="flex-col">
+                    <img src="/resources/color-blind-mode.png" alt="blind logo" class="w-12 h-12 ml-4 mt-2">
+                    <img src="/resources/new_tag.gif" alt="GIF" class="w-8 h-8 ml-4">
+                </div>
+                <div class="mt-6 flex ">
+                    <img src="/resources/account.svg" class="w-5 h-5 ml-16">
+                    <img src="/resources/search-b.svg" class="w-5 h-5 ml-8">
+                </div>
+            </div>
+            <div class="bg-yellow-400 shadow-sm relative top-6" >
+                <h1>l</h1>
+                <img src="/resources/new_resize_3068_170721012710781.jpeg" class="relative top-16 bg-cover">
+            </div>
+            <div class="bg-yellow-50 p-2 shadow-neutral-200 shadow-2xl relative top-20">
+                <h1 class="font-extrabold text-4xl ml-20 mt-5 ">Our Menu</h1>
+                <div class="flex ml-16 mt-3">
+                    <div class="bg-white rounded-2xl flex font-bold ml-3 mr-3 mb-2 text-justify mt-2">
+                        <img src="/resources/deal.svg" alt="deal" class="w-4  h-4 mt-2 ml-2">
+                        <p class="ml-2 mr-3 mt-1.5 text-center text-xs">Popular</p>
+                    </div>
+                    <div class="bg-white rounded-2xl flex font-bold ml-3 mr-3 mb-2 text-justify mt-2">
+                        <img src="/resources/trending.svg" alt="deal" class="w-4  h-4 mt-2 ml-2">
+                        <h1 class="ml-2 mr-3 mt-1.5 text-center text-xs">Deals</h1>
+                    </div>
+                    <div class="bg-white rounded-2xl flex font-bold ml-3 mr-3 mb-2 text-justify mt-2">
+                        <img src="/resources/new-launch.svg" alt="deal" class="w-4  h-4 mt-2 ml-2">
+                        <h1 class="ml-2 mr-3 mt-1.5 text-center text-xs">New Launch</h1>
+                    </div>
+                    <div class="relative ml-auto mr-10">
+                        <input type="text" placeholder="Search here" class="border border-black-300 rounded-lg h-12 pl-4 pr-10 max-w-2xl">
+                        <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                            <svg class="w-5 h-5 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-5.2-5.2M15 10.5C15 6.91 12.09 4 8.5 4S2 6.91 2 10.5 4.91 17 8.5 17 15 14.09 15 10.5z"></path>
+                            </svg>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>
+        <div class="bg-yellow-50  flex relative top-20">
+            <div class="flex-col">
+                <div class="bg-white p-3 contain-strict rounded-xl">
+                    <div class="flex border-r-8 border-yellow-200">
+                        <div class="rounded-full p-3 bg-gray-200 mt-2 mb-2 ml-4">
+                            <img src="/resources/McBreakfast.png" class="w-9 h-9">
+                        </div>
+                        <div class="mt-5 mb-2 ml-4">
+                        <h1 class="whitespace-normal w-24  font-bold text-sm">McBreakfast</h1>
+                        </div>
+                    </div>
+                    <div class="flex">
+                    <div class="rounded-full p-3 bg-yellow-100 mt-2 mb-2 ml-4">
+                        <img src="/resources/Matchtime.png" class="w-9 h-9">
+                    </div>
+                    <div class="mt-2 mb-2 ml-4">
+                    <h1 class="whitespace-normal w-24  font-bold text-sm">Match Time Sharing Combo</h1>
+                    </div>
+                    </div>
+                    <div class="flex">
+                        <div class="rounded-full p-3 bg-gray-200 mt-2 mb-2 ml-4">
+                            <img src="/resources/WcDonalds.png" class="w-9 h-9">
+                        </div>
+                        <div class="mt-4 mb-2 ml-4">
+                            <h1 class="whitespace-normal w-24  font-bold text-sm">WcDonald's Combo</h1>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="rounded-full p-3 bg-gray-200 mt-2 mb-2 ml-4">
+                            <img src="/resources/Burger wraps.png" class="w-9 h-9">
+                        </div>
+                        <div class="mt-4 mb-2 ml-4">
+                            <h1 class="whitespace-normal w-24  font-bold text-sm">Burgers & Wraps</h1>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="rounded-full p-3 bg-gray-200 mt-4 mb-2 ml-4">
+                            <img src="/resources/burger combos.png" class="w-9 h-9">
+                        </div>
+                        <div class="mt-4 mb-2 ml-4">
+                            <h1 class="whitespace-normal w-24  font-bold text-sm">Burger Combos (Meals)</h1>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="rounded-full p-3 bg-gray-200 mt-2 mb-2 ml-4">
+                            <img src="/resources/fries slides.png" class="w-9 h-9">
+                        </div>
+                        <div class="mt-4 mb-2 ml-4">
+                            <h1 class="whitespace-normal w-24  font-bold text-sm">Fries & Slides</h1>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="rounded-full p-3 bg-gray-200 mt-6  mb-6 ml-4">
+                            <img src="/resources/burger combos.png" class="w-9 h-9">
+                        </div>
+                        <div class="mt-4 mb-2 ml-4">
+                            <h1 class="whitespace-normal w-24  font-bold text-sm">Coffee & Beverages (Hot and Cold)</h1>
+                        </div>
+                    </div>
+            <div class="flex">
+                <div class="rounded-full p-3 bg-gray-200 mt-4 mb-2 ml-4">
+                    <img src="/resources/mcsaver.png" class="w-9 h-9">
+                </div>
+                <div class="mt-4 mb-2 ml-4">
+                <h1 class="whitespace-normal w-24  font-bold text-sm">McSaver Combos (2pc Combos)</h1>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="rounded-full p-3 bg-gray-200 mt-2 mb-2 ml-4">
+                    <img src="/resources/desserts.png" class="w-9 h-9">
+                </div>
+                <div class="mt-4 mb-2 ml-4">
+                <h1 class="whitespace-normal w-24  font-bold text-sm">Desserts</h1>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="rounded-full p-3 bg-gray-200 mt-5 mb-2 ml-4">
+                    <img src="/resources/cakes.png" class="w-9 h-9">
+                </div>
+                <div class="mt-4 mb-2 ml-4">
+                <h1 class="whitespace-normal w-24  font-bold text-sm">Cakes Brownies and Cookies</h1>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="rounded-full p-3 bg-gray-200 mt-4 mb-2 ml-4">
+                    <img src="/resources/mcspicy.png" class="w-9 h-9">
+                </div>
+                <div class="mt-4 mb-2 ml-4">
+                <h1 class="whitespace-normal w-24  font-bold text-sm">McSpicy Combos with sprite</h1>
+                </div>
+            </div>
+    
+        </div> 
+    </div>  
+    <div class="m-4 border-r-black border-r-2 mr-10 relative top-0">
+        <h1 class="font-bold text-3xl">Match time Sharing Combos</h1>
+        <div>
+            <div class="flex">
+                <div class="border-gray-300 border-2 rounded-3xl p-2 m-2">
+                <h1 class="font-bold text-xs w-9 text-center text-yellow-300 ">Veg</h1>
+                </div>
+                <div class="border-gray-300 border-2 rounded-3xl p-2 m-2">
+                    <h2 class="font-bold text-xs text-yellow-300">Non-veg</h2>
+                </div>    
+            </div>
+        </div>
+    <div>
+        <div class=" lg:flex-col  xl:flex xl:mr-16">
+            <div class="bg-white w-80 p-5 rounded-lg justify-center mb-2 mr-2">
+                <div class="flex">
+                <img src="/resources/Burger COmbo for 2.png" class="h-52 w-60 ml-4">
+                <img src="/resources/trending up.svg" class="w-4 h-4 ml-1">
+                </div>
+                <h1 class="font-bold whitespace-normal">Burger Combo for 2: McChicken Burger</h1>
+                <p class="text-yellow-300 text-sm">Save big on your favourite sharing combo - 2 </p>
+                <div class="flex">
+                    <p class="text-gray-200 text-lg font-bold"><s>₹588</s></p>
+                    <h1 class="text-lg font-bold ml-2">₹389</h1>
+                </div>
+                <div class="flex bg-yellow-300 justify-center p-1 rounded-md mt-2">
+                    <h1 class="font-bold">Add</h1>
+                    <img src="/resources/add.svg" alt="Add" >
+                </div>
+                <p class="text-gray-500 text-sm ml-24 mt-2">Customisable</p>
+            </div>
+            <div class="bg-white w-80 p-5 rounded-lg justify-center">
+                <div class="flex">
+                <img src="/resources/MCBurger.png" class="h-52 w-60 ml-4">
+                <img src="/resources/veg.svg" class="w-4 h-4 ml-1">
+                </div>
+                <h1 class="font-bold whitespace-normal">McVeggie Burger + 2 Fries (M) + McAloo Tikki+ Veg Pizza McPuff</h1>
+                <p class="text-yellow-300 text-sm">Get the best value in your meal for 2</p>
+                <div class="flex">
+                    <p class="text-gray-200 text-lg font-bold"><s>₹497</s></p>
+                    <h1 class=" ml-2 text-lg font-bold">₹307</h1>
+                </div>
+                <div class="flex bg-yellow-300 justify-center p-1 rounded-md mt-2">
+                    <h1 class="font-bold">Add</h1>
+                    <img src="/resources/add.svg" alt="Add" >
+                </div>
+                <p class="text-gray-500 text-sm ml-24 mt-2">Customisable</p>
+            </div>
+        </div>
+        <div class=" lg:flex-col  xl:flex xl:mr-16">
+        <div class="bg-white w-80 p-5 rounded-lg justify-center mt-2">
+            <div class="flex">
+            <img src="/resources/McSpicyChicken.png" class="h-52 w-60 ml-4 ">
+            <img src="/resources/trending up.svg" class="w-4 h-4 ml-1">
+            </div>
+            <h1 class="font-bold whitespace-normal">McSpicy Chicken Burger + McChicken Burger + Fries (M)</h1>
+            <p class="text-yellow-300 text-sm">Flat 15% Off on McSpicy Chicken Burger +..</p>
+                <h1 class=" ml-2 text-lg font-bold">₹373</h1>
+            <div class="flex bg-yellow-300 justify-center p-1 rounded-md mt-2">
+                <h1 class="font-bold">Add</h1>
+                <img src="/resources/add.svg" alt="Add" >
+            </div>
+            <p class="text-gray-500 text-sm ml-24 mt-2">Customisable</p>
+        </div>
+        <div class="bg-white w-80 p-5 rounded-lg justify-center mt-2 ml-2">
+            <div class="flex">
+            <img src="/resources/Burger combo for2.png" class="h-52 w-60 ml-4 ">
+            <img src="/resources/veg.svg" class="w-4 h-4 ml-1">
+            </div>
+            <h1 class="font-bold whitespace-normal">Burger Combo for 2: McSpicy Deluxe Paneer Burger</h1>
+            <p class="text-yellow-300 text-sm">Flat 15% Off on McSpicy Chicken Burger +..</p>
+                <h1 class=" ml-2 text-lg font-bold">₹499</h1>
+            <div class="flex bg-yellow-300 justify-center p-1 rounded-md mt-2">
+                <h1 class="font-bold">Add</h1>
+                <img src="/resources/add.svg" alt="Add" >
+            </div>
+            <p class="text-gray-500 text-sm ml-24 mt-2">Customisable</p>
+        </div>
+    </div>
+    <div class=" lg:flex-col  xl:flex xl:mr-16">
+        <div class="bg-white w-80 p-5 rounded-lg justify-center mt-2">
+            <div class="flex">
+            <img src="/resources/Burger COmbo for 3.png" class="h-40 w-60 ml-4 ">
+            <img src="/resources/trending up.svg" class="w-4 h-4 ml-1">
+            </div>
+            <h1 class="font-bold whitespace-normal">Burger Combo for 2: McSpicy Deluxe Chicken Burger</h1>
+            <p class="text-yellow-300 text-sm">Save upto 24% off on your favorite sharing..</p>
+                <h1 class=" ml-2 text-lg font-bold">₹</h1>
+            <div class="flex bg-yellow-300 justify-center p-1 rounded-md mt-2">
+                <h1 class="font-bold">Add</h1>
+                <img src="/resources/add.svg" alt="Add" >
+            </div>
+            <p class="text-gray-500 text-sm ml-24 mt-2">Customisable</p>
+        </div>
+        <div class="bg-white w-80 p-5 rounded-lg justify-center mt-2 ml-2">
+            <div class="flex">
+            <img src="/resources/Burger COmbo for 3.png" class="h-40 w-60 ml-4 ">
+            <img src="/resources/veg.svg" class="w-4 h-4 ml-1">
+            </div>
+            <h1 class="font-bold whitespace-normal">Burger Combo for 2: McSpicy Deluxe Paneer Burger</h1>
+            <p class="text-yellow-300 text-sm">Flat 15% Off on McSpicy Chicken Burger +..</p>
+                <h1 class=" ml-2 text-lg font-bold">₹499</h1>
+            <div class="flex bg-yellow-300 justify-center p-1 rounded-md mt-2">
+                <h1 class="font-bold">Add</h1>
+                <img src="/resources/add.svg" alt="Add" >
+            </div>
+            <p class="text-gray-500 text-sm ml-24 mt-2">Customisable</p>
+        </div>
+    </div>
+    <div class=" lg:flex-col  xl:flex xl:mr-16">
+        <div class="bg-white w-80 p-5 rounded-lg justify-center mt-2">
+            <div class="flex">
+            <img src="/resources/Burger COmbo for 3.png" class="h-40 w-60 ml-4 ">
+            <img src="/resources/trending up.svg" class="w-4 h-4 ml-1">
+            </div>
+            <h1 class="font-bold whitespace-normal">Burger Combo for 2: McSpicy Deluxe Chicken Burger</h1>
+            <p class="text-yellow-300 text-sm">Save upto 24% off on your favorite sharing..</p>
+                <h1 class=" ml-2 text-lg font-bold">₹</h1>
+            <div class="flex bg-yellow-300 justify-center p-1 rounded-md mt-2">
+                <h1 class="font-bold">Add</h1>
+                <img src="/resources/add.svg" alt="Add" >
+            </div>
+            <p class="text-gray-500 text-sm ml-24 mt-2">Customisable</p>
+        </div>
+        <div class="bg-white w-80 p-5 rounded-lg justify-center mt-2 ml-2">
+            <div class="flex">
+            <img src="/resources/Burger COmbo for 3.png" class="h-40 w-60 ml-4 ">
+            <img src="/resources/veg.svg" class="w-4 h-4 ml-1">
+            </div>
+            <h1 class="font-bold whitespace-normal">Burger Combo for 2: McSpicy Deluxe Paneer Burger</h1>
+            <p class="text-yellow-300 text-sm">Flat 15% Off on McSpicy Chicken Burger +..</p>
+                <h1 class=" ml-2 text-lg font-bold">₹499</h1>
+            <div class="flex bg-yellow-300 justify-center p-1 rounded-md mt-2">
+                <h1 class="font-bold">Add</h1>
+                <img src="/resources/add.svg" alt="Add" >
+            </div>
+            <p class="text-gray-500 text-sm ml-24 mt-2">Customisable</p>
+        </div>
+    </div>
+    <div class=" lg:flex-col  xl:flex xl:mr-16">
+        <div class="bg-white w-80 p-5 rounded-lg justify-center mt-2">
+            <div class="flex">
+            <img src="/resources/Burger COmbo for 3.png" class="h-40 w-60 ml-4 ">
+            <img src="/resources/trending up.svg" class="w-4 h-4 ml-1">
+            </div>
+            <h1 class="font-bold whitespace-normal">Burger Combo for 2: McSpicy Deluxe Chicken Burger</h1>
+            <p class="text-yellow-300 text-sm">Save upto 24% off on your favorite sharing..</p>
+                <h1 class=" ml-2 text-lg font-bold">₹</h1>
+            <div class="flex bg-yellow-300 justify-center p-1 rounded-md mt-2">
+                <h1 class="font-bold">Add</h1>
+                <img src="/resources/add.svg" alt="Add" >
+            </div>
+            <p class="text-gray-500 text-sm ml-24 mt-2">Customisable</p>
+        </div>
+        <div class="bg-white w-80 p-5 rounded-lg justify-center mt-2 ml-2">
+            <div class="flex">
+            <img src="/resources/Burger COmbo for 3.png" class="h-40 w-60 ml-4 ">
+            <img src="/resources/veg.svg" class="w-4 h-4 ml-1">
+            </div>
+            <h1 class="font-bold whitespace-normal">Burger Combo for 2: McSpicy Deluxe Paneer Burger</h1>
+            <p class="text-yellow-300 text-sm">Flat 15% Off on McSpicy Chicken Burger +..</p>
+                <h1 class=" ml-2 text-lg font-bold">₹499</h1>
+            <div class="flex bg-yellow-300 justify-center p-1 rounded-md mt-2">
+                <h1 class="font-bold">Add</h1>
+                <img src="/resources/add.svg" alt="Add" >
+            </div>
+            <p class="text-gray-500 text-sm ml-24 mt-2">Customisable</p>
+        </div>
+    </div>
+    <div class=" lg:flex-col  xl:flex xl:mr-16">
+        <div class="bg-white w-80 p-5 rounded-lg justify-center mt-2">
+            <div class="flex">
+            <img src="/resources/Burger COmbo for 3.png" class="h-40 w-60 ml-4 ">
+            <img src="/resources/trending up.svg" class="w-4 h-4 ml-1">
+            </div>
+            <h1 class="font-bold whitespace-normal">Burger Combo for 2: McSpicy Deluxe Chicken Burger</h1>
+            <p class="text-yellow-300 text-sm">Save upto 24% off on your favorite sharing..</p>
+                <h1 class=" ml-2 text-lg font-bold">₹</h1>
+            <div class="flex bg-yellow-300 justify-center p-1 rounded-md mt-2">
+                <h1 class="font-bold">Add</h1>
+                <img src="/resources/add.svg" alt="Add" >
+            </div>
+            <p class="text-gray-500 text-sm ml-24 mt-2">Customisable</p>
+        </div>
+        <div class="bg-white w-80 p-5 rounded-lg justify-center mt-2 ml-2">
+            <div class="flex">
+            <img src="/resources/Burger COmbo for 3.png" class="h-40 w-60 ml-4 ">
+            <img src="/resources/veg.svg" class="w-4 h-4 ml-1">
+            </div>
+            <h1 class="font-bold whitespace-normal">Burger Combo for 2: McSpicy Deluxe Paneer Burger</h1>
+            <p class="text-yellow-300 text-sm">Flat 15% Off on McSpicy Chicken Burger +..</p>
+                <h1 class=" ml-2 text-lg font-bold">₹499</h1>
+            <div class="flex bg-yellow-300 justify-center p-1 rounded-md mt-2">
+                <h1 class="font-bold">Add</h1>
+                <img src="/resources/add.svg" alt="Add" >
+            </div>
+            <p class="text-gray-500 text-sm ml-24 mt-2">Customisable</p>
+        </div>
+        
+    </div>
+    </div>
+    
+    
+    </div>
+    <div>
+        <h1 class="font-bold text-xl m-4">Your Cart</h1>
+        <div class="w-3/4 bg-white p-3 flex-col justify-center items-center text-center rounded-lg">
+            <div>
+                <img src="/resources/empty-cart.svg" class="mx-auto">
+                <h1 class="pb-10">Oops! Your Cart is Empty. You haven't placed any order yet.</h1>
+            </div>
+        </div>
+    </div> 
+    </div>
+    <div class="mt-24 flex-col justify-center items-center text-left m-10 ">
+        <h1 class="font-bold text-lg">McDelivery India – Order Food Online</h1>
+        <p class="w-7/8 mt-4">Waiting to sink your teeth into just about anything from the McDonald’s food menu? Well, whatever the excuse, there is just one thing to do, and that is to order food online from the McDelivery website or the McDelivery app! We are without a doubt one of the most popular fast-food restaurants in the country, satiating people’s hunger and cravings and bringing a smile on their faces. And we are proud to say that we have been at it since about 25 years now! Isn’t that something?</p>
+        <p class="w-7/8 mt-4">When at McDonald’s, we have you covered with delicious items that are absolute value for money. Whether it is for breakfast, lunch, dinner or just a snack in-between your online meetings or classes, we have something for everyone, kids, and grown-ups alike. What’s not to love about that? The deliciousness that is the McDonald’s food menu has an incredibly wide variety of both vegetarian and non-vegetarian options, mouth-watering value meals and gourmet meals, burgers and wraps, choicest of desserts and beverages, all of which can match with any level of hunger pangs. So, bring it on!</p>
+        <p class="w-7/8 mt-4">Dive into the McDonald's Indian Menu to tease your tastebuds and satiate that hunger! From The McSpicy Paneer burger to, Chicken Wrap from the McAloo Tikki Burger to the Gourmet Burger Collection, you are spoilt for choice. Looking for a hearty Indian breakfast option? Then try our perfectly seasoned McEgg Burger served with a side of buttered buns. Combine it with a cup of the McDonald’s McCafe and it’s a match made in heaven. One of the most popular items from our Indian menu is the ‘Shake Shake Fries’. The spicy piri piri seasoning combined with some good ol’ McDonald’s Fries is a definite must-have. The hot desi spices and flavours of the McDonald’s Indian Menu creates this symphony of deliciousness in your mouth leaving you craving for more. Order your meals online from the McDelivery website or app and satisfy your cravings for all things yummy.</p>
+        <p class="w-7/8 mt-4">When McDonald’s first opened, we started with a simple menu of just burgers, fries and beverages. And after all these years, sometimes, our customers want just that - a good wholesome flavour-loaded burger. So, order your McDonald’s burger online and eat it like you mean it.</p>
+        <p class="w-7/8 mt-4">Unlike many other food delivery websites, we at McDonalds’s have made ordering food online an experience that can be best described as - easy-peasy. Here’s how you go about it- select the food you crave, next step is to take your pick from the choice of add-ons, drink, side and dessert. Then add to cart, choose mode of payment and voila, you have placed your fast-food order online and your McDonald’s food is on its way! You can also track your order as it comes to you.</p>
+        <p class="w-7/8 mt-4">Online food delivery is a whole new way to love McDonald’s. So, what are you waiting for? It’s McDonald’s o’clock! Order your meal now and allow us to do what we love doing - delivering happiness.</p>
+    </div>
+    <div class="bg-yellow-400  bottom-4 p-16">
+        <div class="bg-white-100  flex justify-center mt-5 p-10">
+            <div>
+            <img src="/resources/Screenshot 2024-05-03 132656.png" class="w-40 h-40 p-2 bg-white" >
+            <h2 class="font-bold text-white text-lg whitespace-normal w-48">CLICK ON QR CODE TO ENLARGE.</h2>
+            </div>
+            <div class="m-4">
+            <h1 class="font-bold text-red-700 text-xl">DISCOVER WITH US</h1>
+            <h2 class="font-bold text-lg">Tell us about your experience.</h2>
+            <h2 class="font-bold text-lg">Scan this QR code to discover more with us.</h2>
+            <h2 class="font-bold text-xl text-white bg-black p-2 w-80 mt-10 flex justify-center rounded-3xl">Download the app</h2>
+    
+            </div>
+        </div>    
+    </div>
+    
+  
+    <div>
+        <div class="p-4 text-sm text-white top-10 bg-black ">
+            <div class="flex p-7">
+            <h2 class="border-white border-r-2 p-1 pr-2 pl-2 ">Privacy Policy</h2>
+            <h2 class="border-white border-r-2 p-1 pr-2 pl-2 ">Feedback</h2>
+            <h2 class="border-white border-r-2 p-1 pr-2 pl-2 ">Feedback</h2>
+            <h2 class="border-white border-r-2 p-1 pr-2 pl-2 ">Terms & Conditions</h2>
+            <h2 class="border-white border-r-2 p-1 pr-2 pl-2 ">Corporate Website</h2>
+            <h2 class="border-white border-r-2 p-1 pr-2 pl-2 ">Faq</h2>
+            <h2 class="border-white border-r-2 p-1 pr-2 pl-2 ">Bug Bounty</h2>
+            <h2 class="border-white border-r-2 p-1 pr-2 pl-2 ">Site Map</h2>
+            <h2 class="border-white border-r-2 p-1 pr-2 pl-2 ">Veg Burgers</h2>
+            <h2 class="border-white border-r-2 p-1 pr-2 pl-2 ">Non Veg Burgers</h2>
+            <h2 class="border-white p-1 pr-2 pl-2 ">Nutrition Info</h2>
+            
+        </div>
+        <div class="flex mt-2 pl-7">
+            <h2 class="border-white border-r-2 p-1 pr-2 pl-2 ">Birthday Party</h2>
+            <h2 class="border-white border-r-2 p-1 pr-2 pl-2 ">All Restaurants</h2> 
+        </div>
+        <div class="flex flex-col p-7">
+            <div class="flex justify-between items-center mb-3 ">
+                <h1>An Average active adult requires 2,000 Kcal energy per day, however, calorie needs may vary.</h1>
+                <div class="flex gap-6">
+                    <img src="/resources/fb.svg" alt="Facebook">
+                    <img src="/resources/insta.svg" alt="Instagram">
+                    <img src="/resources/twitter.svg" alt="Twitter">
+                </div>
+            </div>
+            <h1>FSSAI Central License Number : 10014022002648</h1>
+            <h1>Copyright &copy; 2024 H.R.P.L</h1>
+        </div>
+    </div>
+</div>
+</div>
+<div class="block sm:block md:block lg:hidden">    
+    <div>
+        <nav class="flex justify-between">
+            <div class="m-4 flex-col justify-center text-center">
+                <div class="bg-red-600 1/2 rounded-lg flex  justify-center items-center p-3">
+                    <img src="/resources/bm-delivery-active.svg">
+                </div>
+                <h1 class="font-bold">Delivery</h1>
+            </div>
+            <div class="flex-col text-center justify-center items-center m-4">
+                <div class="bg-white hover:bg-red-600 1/2 rounded-lg flex justify-center items-center p-3">
+                    <img src="/resources/bm-dine-in.svg">
+                </div>
+                <h1 class="font-bold">Dine-In</h1>
+            </div>
+            <div class="flex-col justify-center text-center items-center m-4">
+                <div class="bg-white hover:bg-red-600 1/2 rounded-lg flex justify-center items-center p-3">
+                    <img src="/resources/bm-otg.svg">
+                </div>
+                <h1 class="font-bold">On the Go</h1>
+            </div>
+            <div class="flex-col text-center justify-center items-center m-4">
+                <div class="bg-white hover:bg-red-600 1/2 rounded-lg flex justify-center items-center p-3">
+                    <img src="/resources/bm-delivery.svg">
+                </div>
+                <h1 class="font-bold">Take Away</h1>
+            </div>
+        </nav>
+    </div>
+    <div class="bg-white m-3 rounded-xl">
+        <div class="flex border-b-2">
+            <div>
+                <div class="flex">
+                    <h1 class="font-bold m-2">No address selected</h1>
+                    <img src="/resources/arrow-down.svg">
+                </div>
+                <p class="ml-2">Please enter your location so we can search nearest restaurant to start ordering.</p>
+            </div>
+            <div class="m-4">
+                <img src="/resources/time-circle.svg" class="ml-2">
+                <p>Now</p>
+            </div>
+        </div> 
+        <div  class=" p-2">
+            <div class="flex m-3">
+                <img src="/resources/goldenArches.png" class="w-6 h-6">
+                <h1 class="font-bold ml-2">Bandra</h1>
+                <img src="/resources/arrow-down.svg" class="ml-2">
+                <h1 class="font-bold text-green-500 ml-auto">Open</h1>
+            </div>
+            <div class="flex">
+                <p>532, Kadamba Kudpi House,V.P Road,(Linking Road), Khar(W), Mumbai - 52...</p>
+                <p class="ml-auto">07:00 am - 04:45 am</p>
+            </div>
+        </div> 
+    </div>
+    <img src="/resources/McDelivery.jpeg" class="w-1/2">
+    <div class="flex">
+        <div class="hover:bg-red-600 bg-white rounded-3xl text-center p-1 m-2">
+            <h1 class="hover:text-white text-black font-bold m-1">Popular</h1>
+        </div>
+        <div class="hover:bg-red-600 bg-white rounded-3xl text-center p-1 m-2">
+            <h1 class="hover:text-white text-black font-bold m-1">Deals</h1>
+        </div>
+        <div class="hover:bg-red-600 bg-white rounded-3xl text-center p-1 m-2">
+            <h1 class="hover:text-white text-black font-bold m-1">New Launch</h1>
+        </div> 
+    </div>
+    <div class="flex overflow-x-scroll custom-scrollbar">
+        <div class="flex flex-col items-center m-4">
+        <div>
+            <div class="flex items-center relative top-5 justify-center">
+                <img src="/resources/Burgers.jpeg" class="w-40 h-24">
+                <img src="/resources/trending up.svg" class="w-3 h-3 mt-20">
+            </div>
+            <div class="bg-white p-4   w-60 h-48 rounded-xl">
+                <h1 class="w-36 font-bold m-2">Chicken Maharaja Mac Burger</h1>
+                <h1 class="font-bold p-1">₹258</h1>
+                <div class="flex justify-end items-end">
+                    <div class="bg-yellow-500 rounded-lg p-2 mr-4">
+                        <img src="/resources/add.svg">
+                    </div>
+                </div>
+                <p class="text-right text-xs ml-3">Customisable</p>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col items-center m-4 ">
+        <div>
+            <div class="flex items-center relative top-5 justify-center">
+                <img src="/resources/Burgers.jpeg" class="w-40 h-24">
+                <img src="/resources/trending up.svg" class="w-3 h-3 mt-20">
+            </div>
+            <div class="bg-white p-4   w-60 h-48 rounded-xl">
+                <h1 class="w-36 font-bold m-2">Chicken Maharaja Mac Burger</h1>
+                <h1 class="font-bold p-1">₹258</h1>
+                <div class="flex justify-end items-end">
+                    <div class="bg-yellow-500 rounded-lg p-2 mr-4">
+                        <img src="/resources/add.svg">
+                    </div>
+                </div>
+                <p class="text-right text-xs ml-3">Customisable</p>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col items-center m-4 ">
+        <div>
+            <div class="flex items-center relative top-5 justify-center">
+                <img src="/resources/Burgers.jpeg" class="w-40 h-24">
+                <img src="/resources/trending up.svg" class="w-3 h-3 mt-20">
+            </div>
+            <div class="bg-white p-4   w-60 h-48 rounded-xl">
+                <h1 class="w-36 font-bold m-2">Chicken Maharaja Mac Burger</h1>
+                <h1 class="font-bold p-1">₹258</h1>
+                <div class="flex justify-end items-end">
+                    <div class="bg-yellow-500 rounded-lg p-2 mr-4">
+                        <img src="/resources/add.svg">
+                    </div>
+                </div>
+                <p class="text-right text-xs ml-3">Customisable</p>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col items-center m-4 ">
+        <div>
+            <div class="flex items-center relative top-5 justify-center">
+                <img src="/resources/Burgers.jpeg" class="w-40 h-24">
+                <img src="/resources/trending up.svg" class="w-3 h-3 mt-20">
+            </div>
+            <div class="bg-white p-4   w-60 h-48 rounded-xl">
+                <h1 class="w-36 font-bold m-2">Chicken Maharaja Mac Burger</h1>
+                <h1 class="font-bold p-1">₹258</h1>
+                <div class="flex justify-end items-end">
+                    <div class="bg-yellow-500 rounded-lg p-2 mr-4">
+                        <img src="/resources/add.svg">
+                    </div>
+                </div>
+                <p class="text-right text-xs ml-3">Customisable</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    
+    <img src="/resources/around_the_deal.jpeg" class="w-1/2 pt-4 pb-4">
+    <div class="bg-gradient-to-b from-gray-400 to-yellow-500 flex-col justify-center items-center text-center p-5">
+       <img src="/resources/McSpicyChicken.png" class="w-1/2 p-3 mx-auto">
+       <h1 class=" font-bold mx-auto p-2">McSpicy Chicken Burger + McChicken Burger + Fries (M)</h1>
+       <p class="text-gray-400 text-xs">Customisable</p>
+       <div class="rounded-md mb-10">
+            <h1 class="bg-red-600 text-white font-bold mb-24 p-3 rounded-lg w-36 mx-auto">Add to Cart</h1>
+       </div>
+      </div>
+      
+    <div class="fixed bottom-0 left-0 w-full bg-white py-4">
+        <div class="container mx-auto">
+            <div class="flex">
+                <div class="flex flex-col justify-center items-center text-center w-full">
+                    <img src="/resources/bottom-tab-home.svg">
+                    <p>Home</p>
+                </div>
+                <div class="flex flex-col justify-center items-center text-center w-full">
+                    <img src="/resources/bottom-tab-menu.svg">
+                    <p>Menu</p>
+                </div>
+                <div class="flex flex-col justify-center items-center text-center w-full">
+                    <img src="/resources/bottom-tab-search.svg">
+                    <p>Search</p>
+                </div>
+                <div class="flex flex-col justify-center items-center text-center w-full">
+                    <img src="/resources/bottom-tab-mymcd.svg">
+                    <p>MyMcD</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>   
+
+</body>
+</html>
